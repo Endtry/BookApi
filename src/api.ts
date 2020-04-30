@@ -12,12 +12,9 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const Strategy = require('passport-local');
 const expressJWT = require('express-jwt');
-const bcrypt = require('bcrypt');
-// environment variable
-const envFile = require('../.env');
-const dotEnv = require('dotenv').load(envFile);
+const bcrypt = require('bcrypt-nodejs');
 
-interface IOption {
+export interface IOption {
     dbType: string,
     dbName: string,
     dbUser: string,

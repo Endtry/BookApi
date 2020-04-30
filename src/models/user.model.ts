@@ -7,7 +7,7 @@ import { BaseController } from '../controllers/base.controller';
 import { BaseRouter } from '../routes/base.router';
 import { Request, Response, NextFunction } from 'express';
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt-nodejs');
 const jwt = require('jsonwebtoken');
 const saltRounds = 10;
 

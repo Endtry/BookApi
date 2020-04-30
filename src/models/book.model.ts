@@ -16,9 +16,9 @@ export class Book extends BaseModel {
         // call the super class and create the model
         super(options, name, {
             id: { type: Number, key: 'primary' },
-            title: { type: String, maxlength: 24 },
-            author: { type: String, maxlength: 24 },
-            genre: { type: String, maxlength: 24 },
+            title: { type: String, maxlength: 250 },
+            author: { type: String, maxlength: 250 },
+            genre: { type: String, maxlength: 250 },
             read: { type: Boolean, default: true },
             image_url: { type: String, maxlength: 300 },
             book_type_id: {

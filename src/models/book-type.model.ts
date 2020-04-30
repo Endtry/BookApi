@@ -16,7 +16,7 @@ export class BookType extends BaseModel {
         // call the super class and create the model
         super(options, name, {
             id: { type: Number, key: 'primary' },
-            description: {type:String, maxlength:50},
+            description: {type:String, maxlength:250},
             active: { type: Boolean, default: true },
             created_at: { type: Date, default: Date.now() },
             updated_at: { type: Date, default: Date.now() },
