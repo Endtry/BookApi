@@ -35,5 +35,5 @@ gulp.task("runBuild", (cb) => {
 
 
 gulp.task('default', ['watch', 'assets']);
-
 gulp.task('start', ['deleteDist', 'scripts', 'assets']);
+gulp.task('deploy', ['start']);
